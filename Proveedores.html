@@ -1,0 +1,56 @@
+<!-- Proveedores.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="proveedores.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="proveedores.html" class="active">Proveedores</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="empleados.html">Empleados</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            <li><a href="salir.html">Salir</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Gestión de Proveedores</h1>
+        <div class="proveedores-actions">
+            <button id="addProveedorButton" class="button-add">Agregar Proveedor</button>
+            <input type="text" class="buscar-proveedor" placeholder="Buscar proveedor...">
+        </div>
+        <div class="tabla-proveedores-container">
+            <table class="tabla-proveedores">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>ID del Proveedor</th>
+                        <th>Proveedor</th>
+                        <th>Producto</th>
+                        <th>Días de Entrega</th>
+                        <th>Horarios</th>
+                        <th>Contacto</th>
+                        <th>Correo</th>
+                        <th>Calidad del Producto</th>
+                        <th>Frecuencia de Abastecimiento</th>
+                        <th>Duración del Contrato</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="proveedoresBody">
+                    <!-- Aquí se insertarán las filas de proveedores dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

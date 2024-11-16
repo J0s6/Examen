@@ -1,0 +1,110 @@
+<!-- Dashboard.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="sidebar">
+        
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="empleados.html">Empleados</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            <li><a href="salir.html">Salir</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Dashboard Principal</h1>
+        <div class="transacciones-recientes">
+            <h2>Transacciones Recientes</h2>
+            <div class="transaccion-detalles">
+                <div class="transaccion-header">
+                    <button class="button-back">&larr; Volver</button>
+                    <h3>Detalles de la Transacción</h3>
+                </div>
+                <div class="transaccion-info">
+                    <p><strong>Estado:</strong> <span class="status-completo">Completo</span></p>
+                    <p><strong>ID:</strong> 83</p>
+                    <p><strong>Ref:</strong> 1407232302804-1-5483</p>
+                    <p><strong>Fecha de Venta:</strong> 5/8/14 19:51:42</p>
+                    <p><strong>Fecha de Proceso:</strong> 2014-08-05 19:51:41</p>
+                    <p><strong>Usuario:</strong> admin</p>
+                    <p><strong>Dispositivo:</strong> Michael's PC</p>
+                    <p><strong>Ubicación:</strong> Michael's room</p>
+                    <p><strong>Notas:</strong> <input type="text" class="input-notas" placeholder="Añadir nota..."><button class="button-save">Guardar</button></p>
+                </div>
+                <div class="transaccion-items">
+                    <h3>Artículos</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Cantidad</th>
+                                <th>Nombre</th>
+                                <th>Unidad</th>
+                                <th>Impuesto</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7</td>
+                                <td>Martillo</td>
+                                <td>$15.00</td>
+                                <td>GST</td>
+                                <td>$105.00</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Destornillador</td>
+                                <td>$5.00</td>
+                                <td>GST</td>
+                                <td>$50.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="transaccion-pagos">
+                    <h3>Pagos</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Método</th>
+                                <th>Monto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>eftpos</td>
+                                <td>$30.90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="transaccion-totales">
+                    <h3>Total de la Venta</h3>
+                    <p><strong>Subtotal:</strong> $28.09</p>
+                    <p><strong>GST (10%):</strong> $2.81</p>
+                    <p><strong>Total:</strong> $30.90</p>
+                </div>
+                <div class="transaccion-acciones">
+                    <button class="button-void">Anular</button>
+                    <button class="button-refund">Reembolso</button>
+                    <button class="button-print">Imprimir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

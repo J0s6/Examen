@@ -1,0 +1,1201 @@
+/* styles.css para Inventario */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Inventario */
+.inventario-actions {
+    margin-bottom: 20px;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.buscar-producto {
+    padding: 10px;
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tabla-inventario-container {
+    overflow-x: auto;
+}
+
+.tabla-inventario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-inventario th, .tabla-inventario td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-inventario th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-edit {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.button-edit:hover {
+    background-color: #007bb5;
+}
+
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button-delete:hover {
+    background-color: #da190b;
+}
+
+/* Estilos adicionales para las tablas de Inventario */
+.tabla-inventario tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para botones de acciones */
+.button-edit, .button-delete {
+    transition: background-color 0.3s;
+}
+
+/* styles.css para Clientes */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Clientes */
+.clientes-actions {
+    margin-bottom: 20px;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.buscar-cliente {
+    padding: 10px;
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tabla-clientes-container {
+    overflow-x: auto;
+}
+
+.tabla-clientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-clientes th, .tabla-clientes td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-clientes th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-edit {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.button-edit:hover {
+    background-color: #007bb5;
+}
+
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button-delete:hover {
+    background-color: #da190b;
+}
+
+/* Estilos adicionales para las tablas de Clientes */
+.tabla-clientes tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para botones de acciones */
+.button-edit, .button-delete {
+    transition: background-color 0.3s;
+}
+
+/* styles.css para Dashboard y Clientes */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Dashboard */
+.grafico-ventas-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.grafico-ventas-container canvas {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Estilos para las tablas del Dashboard */
+.tabla-transacciones-container, .tabla-pagos-container, .tabla-totales-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.tabla-transacciones, .tabla-pagos, .tabla-totales {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-transacciones th, .tabla-transacciones td,
+.tabla-pagos th, .tabla-pagos td,
+.tabla-totales th, .tabla-totales td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-transacciones th, .tabla-pagos th, .tabla-totales th {
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos para los botones de acciones */
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.button-edit {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.button-edit:hover {
+    background-color: #007bb5;
+}
+
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button-delete:hover {
+    background-color: #da190b;
+}
+
+/* Estilos adicionales para las tablas del Dashboard */
+.tabla-transacciones tr:nth-child(even), .tabla-pagos tr:nth-child(even), .tabla-totales tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para botones de acciones */
+.button-edit, .button-delete {
+    transition: background-color 0.3s;
+}
+
+/* styles.css para Proveedores */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Proveedores */
+.proveedores-actions {
+    margin-bottom: 20px;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.buscar-proveedor {
+    padding: 10px;
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tabla-proveedores-container {
+    overflow-x: auto;
+}
+
+.tabla-proveedores {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-proveedores th, .tabla-proveedores td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-proveedores th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-edit {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.button-edit:hover {
+    background-color: #007bb5;
+}
+
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button-delete:hover {
+    background-color: #da190b;
+}
+
+/* Estilos adicionales para las tablas */
+.tabla-proveedores th {
+    background-color: #333;
+    color: white;
+}
+
+.tabla-proveedores td {
+    background-color: #fff;
+}
+
+.tabla-proveedores tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para botones de acciones */
+.button-edit, .button-delete {
+    transition: background-color 0.3s;
+}
+/* styles.css para Reportes */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Reportes */
+.reportes-actions {
+    margin-bottom: 20px;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.reportes-container {
+    margin-top: 40px;
+}
+
+.reportes-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#listaReportes {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaReportes li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#listaReportes li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Estilos adicionales para los reportes generados */
+.reporte {
+    padding: 15px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.reporte h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.reporte p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+/* styles.css para Ventas */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Ventas */
+.ventas-actions {
+    margin-bottom: 20px;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.buscar-venta {
+    padding: 10px;
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tabla-ventas-container {
+    overflow-x: auto;
+}
+
+.tabla-ventas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-ventas th, .tabla-ventas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-ventas th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-edit {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.button-edit:hover {
+    background-color: #007bb5;
+}
+
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button-delete:hover {
+    background-color: #da190b;
+}
+
+/* Estilos adicionales para las tablas de Ventas */
+.tabla-ventas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para botones de acciones */
+.button-edit, .button-delete {
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el formulario de registro de ventas */
+#formulario-venta {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#formulario-venta.active {
+    display: block;
+}
+
+.formulario-campo {
+    margin-bottom: 15px;
+}
+
+.formulario-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-campo input, .formulario-campo select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#boton-registrar-venta {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#boton-registrar-venta:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la gráfica de ventas */
+.grafica-ventas-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.grafica-ventas-container canvas {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/* styles.css para Empleados */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Empleados */
+.empleados-actions {
+    margin-bottom: 20px;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+
+.buscar-empleado {
+    padding: 10px;
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.tabla-empleados-container {
+    overflow-x: auto;
+}
+
+.tabla-empleados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-empleados th, .tabla-empleados td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla-empleados th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-edit {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.button-edit:hover {
+    background-color: #007bb5;
+}
+
+.button-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button-delete:hover {
+    background-color: #da190b;
+}
+
+/* Estilos adicionales para las tablas de Empleados */
+.tabla-empleados tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el formulario de registro de empleados */
+#formulario-empleado {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#formulario-empleado.active {
+    display: block;
+}
+
+.formulario-campo {
+    margin-bottom: 15px;
+}
+
+.formulario-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-campo input, .formulario-campo select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#boton-registrar-empleado {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#boton-registrar-empleado:hover {
+    background-color: #45a049;
+    
+}
+/* styles.css para Configuración del Sistema */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Estilos para la sección de Configuración */
+.configuracion-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-campo {
+    margin-bottom: 15px;
+}
+
+.formulario-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-campo input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-add {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #45a049;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1A237E; /* Azul oscuro */
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #673AB7; /* Morado */
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1 {
+    color: #1A237E; /* Azul oscuro */
+}
+
+/* Botones */
+.button-add {
+    background-color: #673AB7; /* Morado */
+    color: #FFFFFF; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-add:hover {
+    background-color: #3F51B5; /* Azul claro */
+}
+
+.button-delete {
+    background-color: #FF4081; /* Rosa suave */
+    color: #FFFFFF; /* Blanco */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button-delete:hover {
+    background-color: #E91E63; /* Un poco más oscuro */
+}
+
+/* Formularios */
+.formulario-campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-campo input, .formulario-campo select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tarjetas y tablas */
+.tabla-ventas, .tabla-empleados, .tabla-configuracion {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #FFFFFF; /* Blanco */
+}
+
+.tabla-ventas th, .tabla-empleados th, .tabla-configuracion th {
+    background-color: #3F51B5; /* Azul claro */
+    color: #FFFFFF; /* Blanco */
+    padding: 10px;
+}
+
+.tabla-ventas td, .tabla-empleados td, .tabla-configuracion td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.logo-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 700px;
+    height: auto;
+}

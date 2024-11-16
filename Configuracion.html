@@ -1,0 +1,54 @@
+<!-- Configuracion.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="configuracion.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="empleados.html">Empleados</a></li>
+            <li><a href="configuracion.html" class="active">Configuración</a></li>
+            <li><a href="salir.html">Salir</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Configuración del Sistema</h1>
+        <div class="configuracion-container">
+            <form id="configuracion-form">
+                <div class="formulario-campo">
+                    <label for="nombre-negocio">Nombre del Negocio:</label>
+                    <input type="text" id="nombre-negocio" placeholder="Ingrese el nombre del negocio">
+                </div>
+                <div class="formulario-campo">
+                    <label for="direccion-negocio">Dirección del Negocio:</label>
+                    <input type="text" id="direccion-negocio" placeholder="Ingrese la dirección del negocio">
+                </div>
+                <div class="formulario-campo">
+                    <label for="telefono-negocio">Teléfono del Negocio:</label>
+                    <input type="text" id="telefono-negocio" placeholder="Ingrese el teléfono del negocio">
+                </div>
+                <div class="formulario-campo">
+                    <label for="correo-negocio">Correo Electrónico del Negocio:</label>
+                    <input type="email" id="correo-negocio" placeholder="Ingrese el correo electrónico del negocio">
+                </div>
+                <div class="formulario-campo">
+                    <label for="impuesto-ventas">Impuesto sobre las Ventas (%):</label>
+                    <input type="number" id="impuesto-ventas" placeholder="Ingrese el porcentaje del impuesto">
+                </div>
+                <button type="button" id="guardar-configuracion" class="button-add">Guardar Configuración</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

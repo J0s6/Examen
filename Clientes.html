@@ -1,0 +1,148 @@
+<!-- Clientes.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="clientes.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="clientes.html" class="active">Clientes</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="empleados.html">Empleados</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            <li><a href="salir.html">Salir</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Gestión de Clientes</h1>
+        <div class="clientes-actions">
+            <button id="addClientButton" class="button-add">Agregar Cliente</button>
+            <input type="text" class="buscar-cliente" placeholder="Buscar cliente...">
+        </div>
+        <div class="tabla-clientes-container">
+            <table class="tabla-clientes">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="clientesBody">
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@example.com</td>
+                        <td>555-1234</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>María López</td>
+                        <td>maria.lopez@example.com</td>
+                        <td>555-5678</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Carlos García</td>
+                        <td>carlos.garcia@example.com</td>
+                        <td>555-8765</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Lucía Fernández</td>
+                        <td>lucia.fernandez@example.com</td>
+                        <td>555-2345</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Roberto Martínez</td>
+                        <td>roberto.martinez@example.com</td>
+                        <td>555-6789</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Elena Gómez</td>
+                        <td>elena.gomez@example.com</td>
+                        <td>555-3456</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Andrés Ramírez</td>
+                        <td>andres.ramirez@example.com</td>
+                        <td>555-7890</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Sofía Herrera</td>
+                        <td>sofia.herrera@example.com</td>
+                        <td>555-4567</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Martín Rojas</td>
+                        <td>martin.rojas@example.com</td>
+                        <td>555-8901</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Laura Castillo</td>
+                        <td>laura.castillo@example.com</td>
+                        <td>555-5670</td>
+                        <td>
+                            <button class="button-edit">Editar</button>
+                            <button class="button-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

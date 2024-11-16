@@ -1,0 +1,53 @@
+<!-- Inventario.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="inventario.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="inventario.html" class="active">Inventario</a></li>
+            <li><a href="proveedores.html">Proveedores</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="empleados.html">Empleados</a></li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            <li><a href="salir.html">Salir</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Gestión de Inventario</h1>
+        <div class="inventario-actions">
+            <button id="addProductButton" class="button-add">Agregar Producto</button>
+            <input type="text" class="buscar-producto" placeholder="Buscar producto...">
+        </div>
+        <div class="tabla-inventario-container">
+            <table class="tabla-inventario">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Código del Producto</th>
+                        <th>Proveedor</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Medidas</th>
+                        <th>Lote de Fabricación</th>
+                        <th>Fecha de Fabricación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="inventarioBody">
+                    <!-- Aquí se insertarán las filas de productos dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
